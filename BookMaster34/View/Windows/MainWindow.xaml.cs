@@ -20,5 +20,41 @@ namespace BookMaster34
         {
             InitializeComponent();
         }
+
+        private void LoginMi_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void LogoutMi_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void CloseAppMi_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+
+        private void ReportsMi_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void CirculationMi_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void ManageCustomersMi_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void ViewCatalogMi_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
