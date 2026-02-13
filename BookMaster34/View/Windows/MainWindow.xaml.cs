@@ -1,4 +1,5 @@
-﻿using System.Text;
+﻿using BookMaster34.View.Windows;
+using System.Text;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -23,12 +24,14 @@ namespace BookMaster34
 
         private void LoginMi_Click(object sender, RoutedEventArgs e)
         {
-
+            LoginWindow loginWindow = new LoginWindow();
+            loginWindow.ShowDialog();
         }
 
         private void LogoutMi_Click(object sender, RoutedEventArgs e)
         {
-
+          LogoutWindow logoutWindow = new LogoutWindow();
+            logoutWindow.ShowDialog();
         }
 
         private void CloseAppMi_Click(object sender, RoutedEventArgs e)
