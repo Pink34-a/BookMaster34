@@ -16,24 +16,29 @@
             <RowDefinition Height="10"></RowDefinition>
             <RowDefinition Height="1*"></RowDefinition>
         </Grid.RowDefinitions>
-
+        
+        
+       <!--Меню проекта Общее-->
         <Menu>
+            
+            <!--Меню клики File-->
             <MenuItem Header="Файл">
-
                 <MenuItem Name="LoginMi" Click="LoginMi_Click" Header="Вход в систему"/>
-                <MenuItem Name="LogoutMi" Click="LogoutMi_Click"  Header="Выход из системы"/>
+                <MenuItem Name="LogoutMi" Click="LogoutMi_Click"  Header="Выход из системы" Visibility="Collapsed" />
                 <MenuItem Name="CloseAppMi" Click="CloseAppMi_Click" Header="Закрыть приложение"/>
-
             </MenuItem>
-
+            
+            <!--Меню клики Library-->
             <MenuItem Header="Библиотека">
-                
                 <MenuItem Name="ViewCatalogMi" Click="ViewCatalogMi_Click"  Header="Просмотр каталога"/>
                 <MenuItem Name="ManageCustomersMi" Click="ManageCustomersMi_Click"  Header="Управление читателями"/>
                 <MenuItem Name="CirculationMi" Click="CirculationMi_Click"  Header="Управление абонентом"/>
                 <MenuItem Name="ReportsMi" Click="ReportsMi_Click"  Header="Отчёты"/>
-                
             </MenuItem>
+
+
+            <!--Фрейм Спрашивает-->
         </Menu>
+        <!--g-->
     </Grid>
 </Window>
