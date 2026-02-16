@@ -8,5 +8,8 @@
         Title="LogoutWindow" Height="450" Width="800">
     <Grid>
         <Button Name="LogoutBtn" Content="Выйти" Click="LogoutBtn_Click"/>
+        
+        
+        
     </Grid>
 </Window>
