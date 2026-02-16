@@ -29,7 +29,7 @@
             </MenuItem>
             
             <!--Меню клики Library-->
-            <MenuItem Header="Библиотека">
+            <MenuItem Name="LibraryMi" Visibility="Collapsed"  Header="Библиотека">
                 <MenuItem Name="ViewCatalogMi" Click="ViewCatalogMi_Click"  Header="Просмотр каталога"/>
                 <MenuItem Name="ManageCustomersMi" Click="ManageCustomersMi_Click"  Header="Управление читателями"/>
                 <MenuItem Name="CirculationMi" Click="CirculationMi_Click"  Header="Управление абонентом"/>
@@ -37,8 +37,10 @@
             </MenuItem>
 
 
-            <!--Фрейм Спрашивает-->
+         
         </Menu>
-        <!--g-->
+        <!--Фрейм-->
+        <Frame Name="MainFrame" Grid.Row="2"/>
+        
     </Grid>
 </Window>
