@@ -40,7 +40,7 @@
          
         </Menu>
         <!--Фрейм-->
-        <Frame Name="MainFrame" Grid.Row="2"/>
+        <Frame Name="MainFrame" Grid.Row="2" NavigationUIVisibility="Hidden"/>
         
     </Grid>
 </Window>
