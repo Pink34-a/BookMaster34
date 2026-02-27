@@ -29,5 +29,15 @@ namespace BookMaster34.View.Pages
         {
 
         }
+
+        private void PreviousPage_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void PreviousPage_Click_1(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
