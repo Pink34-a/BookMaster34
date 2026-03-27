@@ -5,9 +5,34 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:BookMaster34.View.Windows"
         mc:Ignorable="d"
-        Title="LoginWindow" Height="450" Width="800">
-    <Grid>
-        <Button x:Name="LoginBtn" Content="Войти" Click="LoginBtn_Click"/>
-        
+        Title="Окно авторизации" SizeToContent="Height"  Width="500" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Loaded="Window_Loaded">
+    <Grid VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0 50">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="50"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="20"/>
+            <ColumnDefinition Width="300"/>
+        </Grid.ColumnDefinitions>
+
+        <TextBlock Text="Логин:"/>
+        <TextBox Name="LoginTb" Grid.Column="2"/>
+
+        <TextBlock Text="Пароль:"  Grid.Column="0" Grid.Row="2"/>
+        <PasswordBox Name="PasswordPb"  Grid.Column="2" Grid.Row="2" PasswordChar="*"/>
+
+
+        <CheckBox Name="RememberCb" Grid.Row="4" Grid.Column="2" Content="Запомнить меня"/>
+
+        <Button x:Name="LoginBtn" Grid.Row="6" Grid.Column="2" Content="Войти"  Width="130" HorizontalAlignment="Left" Click="LoginBtn_Click"/>
+
+        <Button x:Name="Cancel" Grid.Row="6" Grid.Column="2" Content="Отмена"  Width="130" HorizontalAlignment="Right" Click="Cancel_Click"/>
     </Grid>
 </Window>
