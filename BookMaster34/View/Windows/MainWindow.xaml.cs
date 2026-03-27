@@ -1,4 +1,5 @@
-﻿using BookMaster34.View.Pages;
+﻿using BookMaster34.AppData;
+using BookMaster34.View.Pages;
 using BookMaster34.View.Windows;
 using System.Text;
 using System.Windows;
@@ -28,7 +29,8 @@ namespace BookMaster34
         {
             LoginWindow loginWindow = new LoginWindow();
             if (loginWindow.ShowDialog() == true)
-            { 
+            {
+            CredentialService.ClearAdministrator();
             LibraryMi.Visibility = Visibility.Visible;
             LogoutMi.Visibility = Visibility.Visible;
             LoginMi.Visibility = Visibility.Collapsed;
