@@ -29,6 +29,7 @@ namespace BookMaster34.View.Windows
             AuthorsCmb.ItemsSource=bookAuthors;
             AuthorsCmb.DisplayMemberPath = "Author.Name";
             AuthorsCmb.SelectedIndex = 0;
+ 
         }
 
         private void CloseBtn_Click(object sender, RoutedEventArgs e)
@@ -42,6 +43,7 @@ namespace BookMaster34.View.Windows
 
             if (AuthorsCmb.SelectedItem is BookAuthor bookAurhor)
             {
+                Title = $"Авторы книги: {bookAurhor.Book.Title}";
                 if (string.IsNullOrWhiteSpace(bookAurhor.Author.Wikipedia))
                 {
                     //прячем гиперссылку
