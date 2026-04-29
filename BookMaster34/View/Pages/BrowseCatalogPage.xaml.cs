@@ -53,15 +53,7 @@ namespace BookMaster34.View.Pages
             }
         }
 
-        private void PreviousPage_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void PreviousPage_Click_1(object sender, RoutedEventArgs e)
-        {
-
-        }
+     
         private void LoadData(List<Book> booksList)
         {
             BookAuthorsLV.ItemsSource = booksList;
@@ -89,6 +81,21 @@ namespace BookMaster34.View.Pages
                 BookAuthorsDetailsWindow bookAuthorsDetailsWindow = new BookAuthorsDetailsWindow(_selectedBook.BookAuthors);
                 bookAuthorsDetailsWindow.ShowDialog();
             }
+        }
+
+        private void PreviousPageBtn_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void CurrentPageTb_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void NextPageBtn_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

@@ -15,8 +15,10 @@
             <ColumnDefinition Width="1*"></ColumnDefinition>
         </Grid.ColumnDefinitions>
 <!--Панель поиска-->
-            <Grid Margin="20">
-            <Grid.RowDefinitions>
+        <Border Background="{DynamicResource Gray}">
+        <Grid Margin="20" Background="{DynamicResource Gray}">
+        
+        <Grid.RowDefinitions>
                 <RowDefinition Height="auto"/>
                 <RowDefinition Height="10"/>
                 <RowDefinition Height="50"/>
@@ -52,7 +54,8 @@
                 
                 
         </Grid>
-        <Grid Grid.Column="2" Name="SearchResultsGrid" Visibility="Collapsed" Margin="0 20 20 20">
+        </Border>
+            <Grid Grid.Column="2" Name="SearchResultsGrid" Visibility="Collapsed" Margin="0 20 20 20">
             <Grid.RowDefinitions>
                 <RowDefinition Height="1*"/>
                 <RowDefinition Height="30"/>
@@ -100,11 +103,11 @@
 
                     <TextBlock Text="Страница"/>
 
-                    <Button Name="PreviousPageBtn" Grid.Column="2" Content="&lt;" Click="PreviousPage_Click_1"/>
+                    <Button Name="PreviousPageBtn" Grid.Column="2" Content="&lt;" Click="PreviousPageBtn_Click"/>
 
-                    <TextBox Name="CurrentPageTb" Grid.Column="4"/>
+                    <TextBox Name="CurrentPageTb" Grid.Column="4" TextChanged="CurrentPageTb_TextChanged"/>
 
-                    <Button Name="NextPageBtn" Grid.Column="6" Content="&gt;"/>
+                    <Button Name="NextPageBtn" Grid.Column="6" Content="&gt;" Click="NextPageBtn_Click"/>
 
                     <TextBlock Name="TotalPagesTbl" Grid.Column="8" Text="из 4" />
                     <TextBlock Name="TotalBooksTbl" Grid.Column="12" Text="{Binding ElementName=BookAuthorsLV, Path=Items.Count, StringFormat={}{0} книг найдено}"/>
